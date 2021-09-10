@@ -17,7 +17,7 @@ public class Main {
         // 文件写入
         try {
             FileWriteTest fileWrite=new FileWriteTest();
-            StringBuffer buffer =new StringBuffer();
+            StringBuilder buffer =new StringBuilder();
             for(int i=0;i<1000;i++){
                 buffer.append("大猪蹄子，你好呀");
                 buffer.append("\n");
@@ -28,6 +28,9 @@ public class Main {
         }catch (Exception e){
             System.out.println("写入文件异常："+e.getMessage());
         }
+
+        // 测试git上传
+        DemoT<Boolean> demoBoolean=new DemoT<>(true);
     }
 
 
